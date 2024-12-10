@@ -26,6 +26,9 @@ dependencies {
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+    implementation 'org.apache.taglibs:taglibs-standard-spec:1.2.5'
+    runtimeOnly 'org.apache.taglibs:taglibs-standard-impl:1.2.5'
 }
 
 test {
