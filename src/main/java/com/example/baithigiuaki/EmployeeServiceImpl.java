@@ -1,4 +1,5 @@
 package com.example.baithigiuaki;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,8 +45,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     public List<Employee> searchEmployees(String keyword) {
         List<Employee> result = new ArrayList<>();
         for (Employee employee : employees) {
-            if (employee.getHoTen().toLowerCase().contains(keyword.toLowerCase()) ||
-                    String.valueOf(employee.getId()).contains(keyword)) {
+            if (employee.getHoTen().toLowerCase().contains(keyword.toLowerCase()) || String.valueOf(employee.getId()).contains(keyword)) {
                 result.add(employee);
             }
         }
